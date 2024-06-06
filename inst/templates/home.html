@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  [! partials/header.html !]
+  <script>
+    var wss = new Ambiorix();
+    wss.receive("hello", function(msg){
+      alert(msg);
+    });
+    wss.start();
+  </script>
+  <title>Ambiorix</title>
+</head>
+<body>
+  <h1>Random Users</h1>
+  <div id="users"></div>
+  
+</body>
+</html>
+
+
